@@ -53,15 +53,13 @@ const Charts = ({ data, name }: { data: number[]; name: string }) => {
 
   return (
     <div>
-      {typeof window !== "undefined" && (
-        <ReactApexChart
-          options={state.options as ApexCharts.ApexOptions}
-          series={state.series}
-          type="area"
-          //   width={200}
-          height={120}
-        />
-      )}
+      <ReactApexChart
+        options={state.options as ApexCharts.ApexOptions}
+        series={state.series}
+        type="area"
+        //   width={200}
+        height={120}
+      />
     </div>
   );
 };

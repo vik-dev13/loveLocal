@@ -1,7 +1,8 @@
 import { ISalesData } from "@/interface";
 import Image from "next/image";
 import React from "react";
-import Charts from "../Charts";
+import Charts from "../Charts/AreaChart";
+import { formatValue } from "@/utils";
 
 const BasicAnalyticsCards = ({
   id,
@@ -11,11 +12,6 @@ const BasicAnalyticsCards = ({
   percentageDifference,
   totalSales,
 }: ISalesData) => {
-  const formatValue = (value: number) => {
-    return new Intl.NumberFormat("en-IN", {
-      maximumSignificantDigits: undefined,
-    }).format(value);
-  };
   return (
     <div className="flex flex-col bg-white w-full p-3 gap-2">
       <div className="flex flex-row justify-between items-center">

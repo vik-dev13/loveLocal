@@ -52,3 +52,42 @@ export const salesData = {
     newChat: true,
   },
 };
+
+export const revenueData = {
+  directIndirectInfo: {
+    graphData: [
+      {
+        direct: 2500000,
+        indirect: 9000000,
+        month: "Mar 22",
+      },
+      {
+        direct: 3500000,
+        indirect: 10000000,
+        month: "Apr 22",
+      },
+      {
+        direct: 4500000,
+        indirect: 11000000,
+        month: "May 22",
+      },
+      {
+        direct: 3800000,
+        indirect: 2000000,
+        month: "Jun 22",
+      },
+      {
+        direct: 4800000,
+        indirect: 3000000,
+        month: "Jul 22",
+      },
+      {
+        direct: 5800000,
+        indirect: 8000000,
+        month: "Aug 22",
+      },
+    ],
+    totalSalesDirect: 15345456,
+    totalSalesIndirect: 24345456,
+  },
+};
