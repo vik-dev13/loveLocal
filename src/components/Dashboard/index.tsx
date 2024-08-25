@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <div className="flex flex-1 bg-light flex-col">
       <Navbar />
-      <div className="p-4 ">
+      <div className="p-4 overflow-y-auto">
         <Header />
         <div className="flex flex-row justify-between items-center mt-4 ">
           <Teams />

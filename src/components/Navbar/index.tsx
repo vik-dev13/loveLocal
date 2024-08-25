@@ -6,7 +6,7 @@ import Profile from "./Profile";
 
 const Navbar = () => {
   return (
-    <div className="bg-white h-[5%] flex flex-row items-center justify-end px-3 gap-2 ">
+    <div className="bg-white h-[50px] flex flex-row items-center justify-end px-3 gap-2 ">
       <div className="flex flex-row gap-1.5">
         <Search />
         <Messages />
