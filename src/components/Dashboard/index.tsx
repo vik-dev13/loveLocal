@@ -3,6 +3,7 @@ import Navbar from "../Navbar";
 import Header from "./Header";
 import Teams from "../ActionsBar/Teams";
 import Actions from "../ActionsBar/Actions";
+import Metrics from "../Metrics";
 
 const Dashboard = () => {
   return (
@@ -13,6 +14,9 @@ const Dashboard = () => {
         <div className="flex flex-row justify-between items-center mt-4 ">
           <Teams />
           <Actions />
+        </div>
+        <div className="mt-4">
+          <Metrics />
         </div>
       </div>
     </div>
