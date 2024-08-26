@@ -1,4 +1,4 @@
-import React from "react";
+import { UserContext } from "@/pages/_app";
 
 const Header = () => {
   return (

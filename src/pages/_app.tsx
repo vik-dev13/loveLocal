@@ -4,13 +4,12 @@ import type { AppProps } from "next/app";
 import { createContext, useEffect, useState } from "react";
 import { IUser } from "../interface/index";
 
-const UserContext = createContext<IUser | null>(null);
+export const UserContext = createContext<IUser | null>(null);
 
 export default function App({ Component, pageProps }: AppProps) {
   const [user, setUser] = useState<IUser | null>(null);
   useEffect(() => {
     getSales().then((data) => {
-      console.log(data?.user);
       setUser(data?.user);
     });
   }, []);
