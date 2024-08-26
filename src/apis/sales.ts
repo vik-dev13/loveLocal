@@ -4,13 +4,13 @@ import { ISalesData } from "@/interface";
 export const getSales = async () => {
   const URL = "http://34.93.245.38/sale";
   try {
-    await fetch(URL, {
-      method: "GET",
-      mode: "no-cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    // await fetch(URL, {
+    //   method: "GET",
+    //   mode: "no-cors",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
     const res: ISalesData[] = [
       {
         id: "customer",
