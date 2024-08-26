@@ -31,3 +31,12 @@ export interface IRevenueRes {
   directSales: number;
   indirectSales: number;
 }
+
+export interface IOrderVal {
+  graphData: {
+    current: number[];
+    previous: number[];
+  };
+  percentageDifference: number;
+  total: number;
+}

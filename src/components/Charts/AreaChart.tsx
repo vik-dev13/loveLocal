@@ -7,7 +7,15 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
 
-const Charts = ({ data, name }: { data: number[]; name: string }) => {
+const Charts = ({
+  data,
+  name,
+  height,
+}: {
+  data: number[];
+  name: string;
+  height?: number;
+}) => {
   const state = {
     series: [
       {
@@ -58,7 +66,7 @@ const Charts = ({ data, name }: { data: number[]; name: string }) => {
         series={state.series}
         type="area"
         //   width={200}
-        height={120}
+        height={height ?? 120}
       />
     </div>
   );

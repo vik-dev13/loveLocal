@@ -3,6 +3,7 @@ import { ISalesData } from "@/interface";
 import React, { useEffect, useState } from "react";
 import BasicAnalyticsCards from "./BasicAnalyticsCards";
 import DirectIndirectCard from "./DirectIndirectCard";
+import AvgOrderVal from "./AvgOrderVal";
 
 const Metrics = () => {
   const [salesData, setSalesData] = useState<ISalesData[] | null>(null);
@@ -27,8 +28,9 @@ const Metrics = () => {
           </div>
         ))}
       </div>
-      <div>
+      <div className="flex flex-row gap-2">
         <DirectIndirectCard />
+        <AvgOrderVal />
       </div>
     </div>
   );

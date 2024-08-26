@@ -91,3 +91,18 @@ export const revenueData = {
     totalSalesIndirect: 24345456,
   },
 };
+
+export const orderValueData = {
+  averageOrderValueInfo: {
+    fromDate: "Oct 15th",
+    graphData: {
+      current: [600000, 100000, 300000, 700000, 300000, 600000, 400000, 300000],
+      previous: [
+        400000, 300000, 500000, 200000, 400000, 700000, 200000, 500000,
+      ],
+    },
+    percentageDifference: 39,
+    toDate: "Today",
+    total: 3456,
+  },
+};
